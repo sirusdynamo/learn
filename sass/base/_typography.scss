@@ -1,0 +1,34 @@
+.heading-primary {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+
+  .heading-primary--main {
+    font-size: 3.8rem;
+    display: block;
+    letter-spacing: 3.5rem;
+    /* animation-delay: 2s;
+  animation-iteration-count: 2;
+  
+  animation: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    animation-name: moveInLeft;
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
+  }
+
+  .heading-primary--sub {
+    font-size: 1.8rem;
+    display: block;
+    letter-spacing: 1.12rem;
+    animation: moveInRight ease-out 1.3s;
+  }
+}
+
+body {
+  font-family: "Lato", serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: $color-grey-dark;
+  padding: 1rem;
+}

@@ -10,20 +10,20 @@
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
 
-  .header__logo:hover {
+  &__logo:hover {
     transform: translateY(0.5rem);
   }
-  .header__logo {
+  &__logo {
     transition: all 0.7s;
     height: 3.5rem;
   }
 
-  .header__logo-box {
+  &__logo-box {
     position: relative;
     top: 4rem;
     left: 4rem;
   }
-  .header__text-box {
+  &__text-box {
     position: absolute;
     top: 40%;
     left: 50%;

@@ -73,8 +73,7 @@ body {
   color: #777;
   padding: 1rem; }
 
-.btn .btn:link,
-.btn .btn:visited {
+.btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
@@ -82,22 +81,22 @@ body {
   transition: all 0.2s;
   position: relative; }
 
-.btn .btn:hover {
+.btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
 
-.btn .btn:active {
+.btn:active {
   transform: translateY(-0.1rem);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
 
-.btn .btn--white {
+.btn--white {
   background-color: #fff;
   color: #000;
   border-radius: 50rem; }
-  .btn .btn--white::after {
-    background-color: #ffffff; }
+  .btn--white::after {
+    background-color: #fff; }
 
-.btn .btn::after {
+.btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -109,11 +108,11 @@ body {
   z-index: -1;
   transition: all 0.4s; }
 
-.btn .btn:hover::after {
+.btn:hover::after {
   transform: scale(1.4) scaleY(1.6);
   opacity: 0; }
 
-.btn .btn--animate {
+.btn--animate {
   animation: 0.5s ease-in moveInUp;
   animation-fill-mode: backwards; }
 
@@ -123,22 +122,46 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%); }
-  .header .header__logo:hover {
+  .header__logo:hover {
     transform: translateY(0.5rem); }
-  .header .header__logo {
+  .header__logo {
     transition: all 0.7s;
     height: 3.5rem; }
-  .header .header__logo-box {
+  .header__logo-box {
     position: relative;
     top: 4rem;
     left: 4rem; }
-  .header .header__text-box {
+  .header__text-box {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     backface-visibility: hidden;
     text-align: center; }
+
+.row {
+  max-width: 114rem;
+  background-color: #eeee;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    background-color: orangered;
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .row .col-1-of-3 {
+    width: calc((100% - 2 * 6rem) / 3); }
+  .row .col-2-of-3 {
+    width: calc( 2 * ((100% - 2 * 6rem) / 3) + 6rem); }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 * 6rem) / 4); }
 
 /*
 COLORS:

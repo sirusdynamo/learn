@@ -1,6 +1,6 @@
 .btn {
-  .btn:link,
-  .btn:visited {
+  &:link,
+  &:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
@@ -9,27 +9,27 @@
     position: relative;
   }
 
-  .btn:hover {
+  &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
   }
 
-  .btn:active {
+  &:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
   }
 
-  .btn--white {
-    background-color: #fff;
+  &--white {
+    background-color: $color-white;
     color: $color-black;
     border-radius: 50rem;
 
     &::after {
-      background-color: #ffffff;
+      background-color: $color-white;
     }
   }
 
-  .btn::after {
+  &::after {
     content: "";
     display: inline-block;
     height: 100%;
@@ -42,11 +42,11 @@
     transition: all 0.4s;
   }
 
-  .btn:hover::after {
+  &:hover::after {
     transform: scale(1.4) scaleY(1.6);
     opacity: 0;
   }
-  .btn--animate {
+  &--animate {
     animation: 0.5s ease-in moveInUp;
 
     animation-fill-mode: backwards;

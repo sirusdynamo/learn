@@ -55,13 +55,21 @@ body {
 }
 
 .heading-tertiary {
+<<<<<<< HEAD
   font-size: $default-font-size;
+=======
+  font-size: 1.6rem;
+>>>>>>> 1aaa8a9b84d46fd529efed7d1eeb68824db1ed75
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
+<<<<<<< HEAD
   font-size: $default-font-size;
+=======
+  font-size: 1.6rem;
+>>>>>>> 1aaa8a9b84d46fd529efed7d1eeb68824db1ed75
 
   &:not(:last-child) {
     margin-bottom: 3rem;

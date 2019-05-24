@@ -1,39 +1,23 @@
  .feature-box {
-    background-color:rgba($color-white, 0.8);
-    font-size:1.5rem;
-    border-radius: 3px;
-    height: 30rem;
-    text-align: center;
-    padding: 2.5rem; 
-    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
-    transition: all 0.3s;
- 
- &__icon {
-     display: inline-block;
-     font-size: 4rem;
-     -webkit-background-clip: text; 
-     background-image: linear-gradient(
-        to right,
-         $color-primary-light,
-        $color-primary-dark
-     );
-     margin-bottom: 0.5rem;
-     color: transparent;
-
-
-     
-    
+     background-color: rgba($color-white, 0.8);
+     font-size: 1.5rem;
+     border-radius: 3px;
+     height: 30rem;
+     text-align: center;
+     padding: 2.5rem;
+     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
+     transition: all 0.3s;
+     &__icon {
+         display: inline-block;
+         font-size: 4rem;
+         -webkit-background-clip: text;
+         background-image: linear-gradient( to right, $color-primary-light, $color-primary-dark);
+         margin-bottom: 0.5rem;
+         color: transparent;
+     }
+     &:hover {
+         transform: scale(1.3);
+         transform: translateY(-1.5rem);
+     }
+     &__text {}
  }
- &:hover{
-    transform: scale(1.3);
-   transform:translateY(-1.5rem);
-
-
-}
-   
-
- &__text { 
-
- }
-
-}

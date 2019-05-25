@@ -112,6 +112,9 @@ body {
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
+.u-margin-top-big {
+  margin-top: 8rem; }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -135,6 +138,13 @@ body {
   border-radius: 50rem; }
   .btn--white::after {
     background-color: #fff; }
+
+.btn--green {
+  background-color: #28b485;
+  color: #fff;
+  border-radius: 50rem; }
+  .btn--green::after {
+    background-color: rgba(40, 180, 133, 0.2); }
 
 .btn::after {
   content: "";

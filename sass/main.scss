@@ -1,18 +1,16 @@
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/functions";
-
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
-
 @import "components/button";
 @import "components/composition";
 @import "components/feature-box";
-@import "components/card"; 
+@import "components/card";
+@import "components/story";
 @import "pages/home";
-
 @import "layout/header";
 @import "layout/grid";
 
@@ -25,10 +23,11 @@ Dark green: #28b485
 
 */
 
+
 /* Forming Basic Css reset file */
 
 @media (max-width: 500px) {
-  html {
-    font-size: 25%;
-  }
+    html {
+        font-size: 25%;
+    }
 }

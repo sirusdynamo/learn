@@ -10,6 +10,7 @@
 @import "components/feature-box";
 @import "components/card";
 @import "components/story";
+@import "components/bgvideo";
 @import "pages/home";
 @import "layout/header";
 @import "layout/grid";
@@ -25,9 +26,3 @@ Dark green: #28b485
 
 
 /* Forming Basic Css reset file */
-
-@media (max-width: 500px) {
-    html {
-        font-size: 25%;
-    }
-}

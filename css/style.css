@@ -322,8 +322,7 @@ body {
   .card__price-value {
     font-size: 4rem;
     text-transform: uppercase;
-    margin-bottom: 10rem;
-    display: inline-block; }
+    margin-bottom: 10rem; }
 
 .story {
   width: 75%;
@@ -524,6 +523,43 @@ body {
     transform: translate(-50%, -50%);
     backface-visibility: hidden;
     text-align: center; }
+
+.footer {
+  background-color: #333;
+  padding: 4rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7; }
+  .footer__logo {
+    width: 10rem;
+    height: auto; }
+  .footer__navigation {
+    border-top: 1px solid #f7f7f7;
+    padding: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: #f7f7f7;
+    text-decoration: none;
+    background-color: #333;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s;
+    padding: .2rem;
+    border-radius: 4px; }
+  .footer__link:hover, .footer__link:active {
+    color: #55c57a;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.4); }
+  .footer__copyright {
+    border-top: 1px solid #f7f7f7;
+    padding: 2rem;
+    display: inline-block;
+    float: right; }
 
 .row {
   max-width: 114rem;

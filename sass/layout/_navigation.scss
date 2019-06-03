@@ -13,6 +13,11 @@
                 z-index: 1000;
                 border-radius: 50%;
                 box-shadow: 0 1rem 12rem 3rem rgba($color-black, 0.4);
+                cursor: pointer;
+                @include respond(tab-port) {
+                    top: 4rem;
+                    right: 4rem;
+                }
             }
             &__background {
                 height: 6rem;
@@ -24,7 +29,10 @@
                 background-image: radial-gradient($color-primary-light, $color-primary-dark);
                 z-index: 100;
                 transition: transform 0.5s;
-                // transform: scale(80);
+                @include respond(tab-port) {
+                    top: 4rem;
+                    right: 4rem;
+                }
             }
             &__nav {
                 height: 100vh;
